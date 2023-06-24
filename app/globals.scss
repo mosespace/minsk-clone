@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap');       //This is poppins font imported in
+
+$yellow: #f9b70d;
+$--text-color: #fff;  //These are added global variables
+$header-height: 75px;
+
+* {       //This is the intial start-up
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {       //This is the main picked from page.js
+  max-width: 100vh;
+  margin: 0 auto;
+}
+
+header {       //This is the whole header style
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 16%;
+  transition: all .50s ease;
+
+  nav {     //This is the navbar style
+      overflow: hidden;
+      text-overflow: ellipsis;  
+      white-space: nowrap;
+      margin-right: 64%;
+      display: flex;
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding: 5px 20px;
+      transition: all .50s ease;
+      gap: 1.5rem;
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        
+        color: #D9998a;
+      }
+  };
+}
