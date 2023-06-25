@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap');       //This is poppins font imported in
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto&display=swap');       //This is poppins font imported in
 
 $yellow: #f9b70d;
 $--text-color: #fff;  //These are added global variables
+$--text-black: #ffa500; 
+$--bg-color: #000 ;
 $header-height: 75px;
 
 * {       //This is the intial start-up
@@ -26,14 +28,13 @@ header {       //This is the whole header style
   z-index: 1000;
   display: flex;
   height: $header-height;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 28px 16%;
-  transition: all .50s ease;
+  // transition: all .50s ease;
 
   nav {     //This is the navbar style
-      overflow: hidden;
+
       text-overflow: ellipsis;  
       white-space: nowrap;
       margin-right: 64%;
@@ -41,7 +42,7 @@ header {       //This is the whole header style
       font-size: 1.2rem;
       font-weight: 500;
       padding: 5px 20px;
-      transition: all .50s ease;
+      // transition: all .50s ease;
       gap: 1.5rem;
       align-items: center;
       a {
@@ -54,3 +55,106 @@ header {       //This is the whole header style
       }
   };
 }
+
+section{
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  color: $--text-color;
+}
+
+.footer {       //This is the first-big footer style
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 40%;
+  background-color: $--text-color;
+  padding: 30px 16%;
+  display: flex;
+  justify-content: space-between;
+
+    a{
+      text-decoration: none;
+      color: $--bg-color;
+    }
+   
+    .column1{
+      gap: 1rem;
+      margin-left: 40%;
+      // width: 0;
+      height: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      white-space: nowrap;
+      font-weight: 300;
+      h1{
+        color:$--bg-color;
+        font-weight: 400;  
+      }
+
+      a:hover {
+        
+        color: #D9998a;
+      }
+    }
+    .column2{
+      gap: 1rem;
+      margin-left: 5%;
+      height: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      white-space: nowrap;
+      font-weight: 300;
+      h1{
+        color:$--bg-color;
+        font-weight: 400;
+      }
+
+      a:hover {
+        color: #D9998a;
+      }
+    }
+
+  }    
+  .subfooter{       //This is the sub footer style
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: $--text-color;
+    padding: 55px 16%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    p {
+      color: $--bg-color;
+    }
+
+    a{
+      text-decoration: underline;
+      color: $--bg-color;
+      
+    }
+    
+    a:hover {
+        color: #D9998a;
+      }
+
+    .close-each{
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      a{
+        text-decoration: none;
+      }
+      a:hover{
+        color: #D9998a;
+        text-decoration: none;
+      }
+    }
+
+  }
