@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+$primary-green: #274f4a;
+//margin padding
+$paddings: 0.4rem 2rem;
+body {
+  width: 100vw;
+  min-height: 100vh;
+  // overflow: hidden;
+  padding: 1rem 0.6rem;
+  @media (max-width: 768px) {
+    padding: 0.4rem 0.2rem;
+  }
+  .contact-section {
+    width: 95%;
+    height: 500px;
+    padding: 6rem 3rem;
+    margin: 0 auto;
+    // background-color: rebeccapurple;
+    background: url(../public/image/contact.webp);
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    @media (max-width: 768px) {
+      margin-top: 2rem;
+      padding: 1.2rem 1rem;
+      width: 92%;
+      height: 300px;
+      flex-wrap: wrap;
+    }
+
+    .overally {
+      width: 100%;
+      height: 100%;
+      background-color: $primary-green;
+      position: absolute;
+      opacity: 0.8;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+    // .contact-img {
+    //   width: 20px;
+    // }
+    .contact-sectn-details {
+      color: white;
+      width: 70%;
+      z-index: 333;
+      position: absolute;
+      @media (max-width: 768px) {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .h-one {
+        font-size: 3rem;
+        width: 90%;
+        letter-spacing: 0.2rem;
+        flex-wrap: wrap;
+        @media (max-width: 768px) {
+          font-size: 1.6rem;
+        }
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        @media (max-width: 768px) {
+          line-height: 1.5rem;
+          font-size: 1rem;
+          width: 90%;
+          // background-color: red;
+          margin-top: 0.2rem;
+        }
+      }
+    }
+  }
+  .freqAsk-sectn {
+    padding: $paddings;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    .left-faq {
+      width: 40%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      h1 {
+        font-size: 3.2rem;
+        font-weight: 400;
+        span {
+          background-color: #f5e4e0;
+        }
+      }
+      // p {
+      //   background-color: red;
+      // }
+    }
+    .right-faq {
+      width: 60%;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      .question-wrapper {
+        width: 100%;
+        padding: 1.3rem;
+        margin: 0.8rem 0;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        position: relative;
+        top: -1rem;
+        // @media (max-width: 768px) {
+
+        // }
+        .question {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          h3 {
+            @media (max-width: 768px) {
+              font-size: 1rem;
+            }
+          }
+          p {
+            background-color: red;
+            background-color: green;
+            @media (max-width: 768px) {
+              font-size: 1rem;
+              background-color: red;
+            }
+          }
+          .plus {
+            font-size: 1.7rem;
+          }
+        }
+        p {
+          // background-color: red;
+          // position: absolute;
+          display: none;
+        }
+        .show-answer {
+          display: block;
+        }
+      }
+    }
+  }
+  .testimonial-sectn {
+    display: flex;
+    width: 100%;
+    gap: 2.2rem;
+    padding: 2rem 2rem;
+    // justify-content: space-between;
+    color: white;
+    justify-content: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 0.4rem 1rem;
+    }
+    .greenCard {
+      width: 50%;
+      padding: 1.4rem 2rem;
+      border-radius: 10px;
+      background-color: $primary-green;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 768px) {
+        width: 97%;
+        gap: 0.7rem;
+      }
+      gap: 1rem;
+      h1 {
+        @media (max-width: 768px) {
+          font-size: 1.3rem;
+        }
+      }
+      .feedBack {
+        margin-top: 1.3rem;
+        line-height: 1.3rem;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.9rem;
+      }
+      .cardUserDetails {
+        display: flex;
+
+        gap: 1rem;
+        .user-img {
+          img {
+            border-radius: 2rem;
+          }
+        }
+        .user-details {
+          // background-color: #671eac;
+        }
+      }
+    }
+  }
+}
