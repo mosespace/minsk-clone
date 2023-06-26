@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
+    reactStrictMode: true, 
     images: {
-      domains: ["https://minsk-template.webflow.io/"],
+      domains: ['minsk-template.webflow.io', 'assets.website-files.com'],
     },
-  };
+  }

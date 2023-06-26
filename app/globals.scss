@@ -31,6 +31,7 @@ header {       //This is the whole header style
   justify-content: space-between;
   align-items: center;
   padding: 28px 16%;
+  margin-bottom: 40%; /* Adjust this value as needed */
   // transition: all .50s ease;
 
   nav {     //This is the navbar style
@@ -119,8 +120,9 @@ section{
       }
     }
 
-  }    
-  .subfooter{       //This is the sub footer style
+} 
+
+.subfooter{       //This is the sub footer style
     position: fixed;
     bottom: 0;
     left: 0;
@@ -157,4 +159,76 @@ section{
       }
     }
 
+}
+
+.all-projects {
+  // min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  width: 50%;
+  margin: 10% 0;
+  overflow: hidden;
+  border-radius: 1.2rem;
+  transition: transform 0.4s ease-in-out;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+  transform: scale(1.02);
+ }
+  
+ img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 1.2rem;
+ }
+}
+
+.infomation {
+  padding: 16px;
+
+  button {
+    margin-bottom: 10px ;
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    background-color: #e4c1ba;
+    color: #ffffff;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #d9998a;
+    }
+    
   }
+
+  h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+} 
+  p {
+  margin-bottom: 30px;
+  margin-top: 8px;
+  position: relative;
+  
+  &::after {
+  content: "\2192";
+  margin-left: 5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+}
+}
