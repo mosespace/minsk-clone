@@ -31,7 +31,7 @@ header {       //This is the whole header style
   justify-content: space-between;
   align-items: center;
   padding: 28px 16%;
-  // transition: all .50s ease;
+  margin-bottom: 40%;
 
   nav {     //This is the navbar style
 
@@ -42,7 +42,6 @@ header {       //This is the whole header style
       font-size: 1.2rem;
       font-weight: 500;
       padding: 5px 20px;
-      // transition: all .50s ease;
       gap: 1.5rem;
       align-items: center;
       a {
@@ -83,7 +82,6 @@ section{
     .column1{
       gap: 1rem;
       margin-left: 40%;
-      // width: 0;
       height: 0;
       display: flex;
       flex-direction: column;
